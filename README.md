@@ -5,7 +5,7 @@
 
 Meteor sign up and sign in templates (and much more!) styled for twitter Bootstrap
 
-This package depends on [useraccounts:core](https://atmospherejs.com/useraccounts/core)
+This package depends on [sebl29:useraccounts-core](https://atmospherejs.com/useraccounts/core)
 
 Learn more [here](http://useraccounts.meteor.com) or have a look at a [live demo application](http://useraccounts-bootstrap.meteor.com) or at the full [documentation](https://github.com/meteor-useraccounts/core).
 
