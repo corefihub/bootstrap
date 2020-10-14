@@ -5,11 +5,11 @@ Package.describe({
   git: 'https://github.com/sebl29/bootstrap.git',
 });
 
-Package.on_use(function(api, where) {
+Package.onUse(function(api) {
   api.versionsFrom('1.11.1');
 
   api.use([
-    'templating',
+    'blaze-html-templates@1.1.2',
     'underscore',
   ], 'client');
 
@@ -67,7 +67,7 @@ Package.on_use(function(api, where) {
   ], ['client']);
 });
 
-Package.on_test(function(api) {
+Package.onTest(function(api) {
   api.use([
     'sebl29:useraccounts-bootstrap@1.15.0',
     'sebl29:useraccounts-core@1.15.0',
