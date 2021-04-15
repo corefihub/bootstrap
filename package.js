@@ -1,20 +1,20 @@
 Package.describe({
   summary: 'Accounts Templates styled for Twitter Bootstrap.',
-  version: '1.15.0',
-  name: 'sebl29:useraccounts-bootstrap',
-  git: 'https://github.com/sebl29/bootstrap.git',
+  version: '1.15.1',
+  name: 'corefihub:useraccounts-bootstrap',
+  git: 'https://github.com/corefihub/bootstrap.git',
 });
 
 Package.onUse(function(api) {
   api.versionsFrom('1.11.1');
 
   api.use([
-    'blaze-html-templates@1.1.2',
+    'blaze-html-templates@1.2.0',
     'underscore',
   ], 'client');
 
   api.use([
-    'sebl29:useraccounts-core',
+    'corefihub:useraccounts-core',
   ], ['client', 'server']);
 
   // Requires all routing packages loads before this asking for weak dependencies.
@@ -22,7 +22,7 @@ Package.onUse(function(api) {
   api.use('sebl29:useraccounts-iron-routing@1.15.0', ['client', 'server'], {weak: true});
 
   api.imply([
-    'sebl29:useraccounts-core@1.15.0',
+    'corefihub:useraccounts-core@1.15.1',
   ], ['client', 'server']);
 
   api.add_files([
@@ -69,8 +69,8 @@ Package.onUse(function(api) {
 
 Package.onTest(function(api) {
   api.use([
-    'sebl29:useraccounts-bootstrap@1.15.0',
-    'sebl29:useraccounts-core@1.15.0',
+    'corefihub:useraccounts-bootstrap@1.15.1',
+    'corefihub:useraccounts-core@1.15.1',
   ]);
 
   api.use([
