@@ -1,6 +1,6 @@
 Package.describe({
   summary: 'Accounts Templates styled for Twitter Bootstrap.',
-  version: '1.15.1',
+  version: '1.15.2',
   name: 'corefihub:useraccounts-bootstrap',
   git: 'https://github.com/corefihub/bootstrap.git',
 });
@@ -22,7 +22,7 @@ Package.onUse(function(api) {
   api.use('sebl29:useraccounts-iron-routing@1.15.0', ['client', 'server'], {weak: true});
 
   api.imply([
-    'corefihub:useraccounts-core@1.15.1',
+    'corefihub:useraccounts-core@1.15.2',
   ], ['client', 'server']);
 
   api.add_files([
